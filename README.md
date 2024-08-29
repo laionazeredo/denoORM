@@ -1,12 +1,12 @@
-<img src="./design/logo.png" height="150" />
+<img src="./design/deno_orm_logo.jpeg" height="150" />
 
-# DenoDB
+# DenoORM
 
-**⛔️ This project is not actively maintained: expect issues, and delays in reviews**
+**This is a fork and new development over [this project](https://github.com/eveningkid/denodb)**
 
 - 🗣 Supports PostgreSQL, MySQL, MariaDB, SQLite and MongoDB
 - 🔥 Simple, typed API
-- 🦕 Deno-ready
+- 🦕 Deno-ready⛔️ This project is not actively maintained: expect issues, and delays in reviews
 - [Read the documentation](https://eveningkid.github.io/denodb-docs)
 
 ```typescript
