@@ -4,7 +4,6 @@ about: Create a report to help us improve
 title: "[ISSUE/BUG]: "
 labels: bug
 assignees: ''
-projects: ["laionazeredo/7"]
 ---
 
 **Describe the issue/bug**
