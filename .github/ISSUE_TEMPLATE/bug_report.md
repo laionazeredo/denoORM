@@ -4,6 +4,7 @@ about: Create a report to help us improve
 title: "[ISSUE/BUG]: "
 labels: bug
 assignees: ''
+project: DenoORM
 ---
 
 **Describe the issue/bug**
