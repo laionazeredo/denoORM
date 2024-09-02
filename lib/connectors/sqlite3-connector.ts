@@ -1,4 +1,4 @@
-import { SQLiteClient } from "../../deps.ts";
+import {Database as SQLiteClient } from "@db/sqlite";
 import type { Connector, ConnectorOptions } from "./connector.ts";
 import type { QueryDescription } from "../query-builder.ts";
 import type { FieldValue } from "../data-types.ts";
