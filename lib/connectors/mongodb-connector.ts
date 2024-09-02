@@ -1,5 +1,5 @@
-import { MongoClient as MongoDBClient, Bson } from "mongo-driver";
-import type { MongoDBClientOptions, MongoDBDatabase } from "../../deps.ts";
+import { MongoClient as MongoDBClient, Bson, ConnectOptions as MongoDBClientOptions } from "mongo-driver";
+import { Database as MongoDBDatabase } from "mongo-options";
 import type { Connector, ConnectorOptions } from "./connector.ts";
 import type { QueryDescription } from "../query-builder.ts";
 import { BasicTranslator } from "../translators/basic-translator.ts";

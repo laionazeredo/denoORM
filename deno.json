@@ -3,6 +3,7 @@
   "imports": {
     "@bartlomieju/postgres": "jsr:@bartlomieju/postgres@^0.17.2",
     "mongo-driver": "https://deno.land/x/mongo@v0.28.0/mod.ts",
+    "mongo-options": "https://deno.land/x/mongo@v0.28.1/src/database.tss",
     "@db/sqlite": "jsr:@db/sqlite@^0.12.0",
     "@wok/case": "jsr:@wok/case@^1.0.1",
     "colorlog": "https://deno.land/x/colorlog@v1.0/mod.ts",
