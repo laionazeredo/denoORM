@@ -1,4 +1,4 @@
-import { MongoDBClient, Bson } from "../../deps.ts";
+import { MongoClient as MongoDBClient, Bson } from "mongo-driver";
 import type { MongoDBClientOptions, MongoDBDatabase } from "../../deps.ts";
 import type { Connector, ConnectorOptions } from "./connector.ts";
 import type { QueryDescription } from "../query-builder.ts";
@@ -152,7 +152,7 @@ export class MongoDBConnector implements Connector {
               (value) => new Bson.ObjectId(value)
             );
           }
-          
+
           wheres[queryDescription.whereIn.field] = {
             $in: queryDescription.whereIn.possibleValues,
           };

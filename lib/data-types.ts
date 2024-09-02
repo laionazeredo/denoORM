@@ -1,5 +1,5 @@
 import type { ModelSchema } from "./model.ts";
-import { Bson } from "../deps.ts";
+import { Bson } from "mongo-driver";
 
 type ObjectId = Bson.ObjectId;
 
