@@ -1,0 +1,11 @@
+{
+  "tasks": {
+  },
+  "imports": {
+    "@bartlomieju/postgres": "jsr:@bartlomieju/postgres@^0.17.2",
+    "@wok/case": "jsr:@wok/case@^1.0.1",
+    "colorlog": "https://deno.land/x/colorlog@v1.0/mod.ts",
+    "knex": "npm:knex@^3.1.0",
+    "mysql-driver": "https://deno.land/x/mysql@v2.12.1/mod.ts"
+  }
+}

@@ -1,5 +1,9 @@
-import { configMySQLLogger, MySQLClient, MySQLConnection } from "../../deps.ts";
-import type { LoggerConfig } from "../../deps.ts";
+import {
+  Client as MySQLClient,
+  configLogger as configMySQLLogger,
+  Connection as MySQLConnection,
+  LoggerConfig
+} from "mysql-driver";
 import type { Connector, ConnectorOptions } from "./connector.ts";
 import { SQLTranslator } from "../translators/sql-translator.ts";
 import type { SupportedSQLDatabaseDialect } from "../translators/sql-translator.ts";

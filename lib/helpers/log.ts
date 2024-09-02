@@ -1,4 +1,4 @@
-import { ConsoleColor } from "../../deps.ts";
+import * as ConsoleColor from "colorlog";
 
 export function success(message: string) {
   console.log(ConsoleColor.success(message));

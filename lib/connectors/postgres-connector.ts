@@ -1,4 +1,4 @@
-import { PostgresClient } from "../../deps.ts";
+import { Client as PostgresClient } from "@bartlomieju/postgres";
 import type { Connector, ConnectorOptions } from "./connector.ts";
 import { SQLTranslator } from "../translators/sql-translator.ts";
 import type { SupportedSQLDatabaseDialect } from "../translators/sql-translator.ts";

@@ -1,4 +1,5 @@
-import { snakeCase, SQLQueryBuilder } from "../../deps.ts";
+import { snakeCase } from "@wok/case";
+import * as SQLQueryBuilder from "knex";
 import type { FieldAlias } from "../data-types.ts";
 import { addFieldToSchema } from "../helpers/fields.ts";
 import type { Query, QueryDescription } from "../query-builder.ts";

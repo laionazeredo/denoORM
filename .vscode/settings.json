@@ -1,0 +1,11 @@
+{
+  "deno.enable": true,
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  }
+}

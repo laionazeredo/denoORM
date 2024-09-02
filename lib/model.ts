@@ -8,7 +8,7 @@ import type {
 } from "./query-builder.ts";
 import type { Database } from "./database.ts";
 import type { PivotModelSchema } from "./model-pivot.ts";
-import { camelCase } from "../deps.ts";
+import { camelCase } from "@wok/case";
 import {
   DataTypes,
   FieldAlias,
