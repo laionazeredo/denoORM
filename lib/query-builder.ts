@@ -1,4 +1,4 @@
-import type * as SQLQueryBuilder  from "knex";
+import type * as SQLQueryBuilder from "knex";
 import type { FieldAlias, FieldValue, Values } from "./data-types.ts";
 import { Model, ModelDefaults, ModelFields, ModelSchema } from "./model.ts";
 

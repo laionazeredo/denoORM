@@ -63,7 +63,7 @@ export type ModelEventListeners = {
 
 /** Model that can be used with a `Database`. */
 export class Model {
-  [attribute: string]: FieldValue | Function
+  [attribute: string]: FieldValue | Function;
 
   /** Table name as it should be saved in the database. */
   static table = "";

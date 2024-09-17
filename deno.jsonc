@@ -1,5 +1,9 @@
 {
-  "tasks": {},
+  "tasks": {
+    "lint": "deno lint",
+    "format": "deno fmt",
+    "test": "deno test"
+  },
   "imports": {
     "@bartlomieju/postgres": "jsr:@bartlomieju/postgres@^0.17.2",
     "mongo-driver": "https://deno.land/x/mongo@v0.28.0/mod.ts",

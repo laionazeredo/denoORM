@@ -2,7 +2,7 @@ import {
   Client as MySQLClient,
   configLogger as configMySQLLogger,
   Connection as MySQLConnection,
-  LoggerConfig
+  LoggerConfig,
 } from "mysql-driver";
 import type { Connector, ConnectorOptions } from "./connector.ts";
 import { SQLTranslator } from "../translators/sql-translator.ts";
@@ -69,7 +69,7 @@ export class MySQLConnector implements Connector {
   async query(
     queryDescription: QueryDescription,
     client?: MySQLClient | MySQLConnection,
-  // deno-lint-ignore no-explicit-any
+    // deno-lint-ignore no-explicit-any
   ): Promise<any | any[]> {
     await this._makeConnection();
 

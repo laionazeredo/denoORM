@@ -1,4 +1,8 @@
-import { MongoClient as MongoDBClient, Bson, ConnectOptions as MongoDBClientOptions } from "mongo-driver";
+import {
+  Bson,
+  ConnectOptions as MongoDBClientOptions,
+  MongoClient as MongoDBClient,
+} from "mongo-driver";
 import { Database as MongoDBDatabase } from "mongo-options";
 import type { Connector, ConnectorOptions } from "./connector.ts";
 import type { QueryDescription } from "../query-builder.ts";
@@ -146,11 +150,11 @@ export class MongoDBConnector implements Connector {
         const selectFields: Object[] = [];
 
         if (queryDescription.whereIn) {
-
           if (queryDescription.whereIn.field === "_id") {
-            queryDescription.whereIn.possibleValues = queryDescription.whereIn.possibleValues.map(
-              (value) => new Bson.ObjectId(value)
-            );
+            queryDescription.whereIn.possibleValues = queryDescription.whereIn
+              .possibleValues.map(
+                (value) => new Bson.ObjectId(value),
+              );
           }
 
           wheres[queryDescription.whereIn.field] = {
