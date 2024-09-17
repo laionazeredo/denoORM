@@ -7,5 +7,9 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "sonarlint.connectedMode.project": {
+    "connectionId": "laionazeredo",
+    "projectKey": "laionazeredo_denoORM"
   }
 }
