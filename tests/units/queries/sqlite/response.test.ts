@@ -3,10 +3,10 @@ import { getSQLiteConnection } from "../../../connection.ts";
 import { assertEquals } from "../../../deps.ts";
 
 class Article extends Model {
-  static table = "updatearticle";
-  static timestamps = false;
+  static override table = "updatearticle";
+  static override timestamps = false;
 
-  static fields = {
+  static override fields = {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,

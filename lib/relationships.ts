@@ -52,7 +52,7 @@ export const Relationships = {
   },
 
   /** Generate a many-to-many pivot model for two given models.
-   * 
+   *
    *     const AirportFlight = Relationships.manyToMany(Airport, Flight);
    */
   manyToMany(
@@ -68,9 +68,9 @@ export const Relationships = {
     const modelBFieldName = foreignKey || `${modelB.name.toLowerCase()}Id`;
 
     class PivotClass extends PivotModel {
-      static table = pivotClassName;
+      static override table = pivotClassName;
 
-      static fields = {
+      static override fields = {
         id: {
           primaryKey: true,
           autoIncrement: true,
@@ -79,12 +79,12 @@ export const Relationships = {
         [modelBFieldName]: Relationships._belongsToField(modelB),
       };
 
-      static _pivotsModels = {
+      static override _pivotsModels = {
         [modelA.name]: modelA,
         [modelB.name]: modelB,
       };
 
-      static _pivotsFields = {
+      static override _pivotsFields = {
         [modelA.name]: modelAFieldName,
         [modelB.name]: modelBFieldName,
       };

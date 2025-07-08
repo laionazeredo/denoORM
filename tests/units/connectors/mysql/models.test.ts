@@ -6,17 +6,17 @@ Deno.test("MySQL: Single model", async function () {
   const connection = getMySQLConnection();
 
   class Flight extends Model {
-    static table = "flights";
-    static timestamps = false;
+    static override table = "flights";
+    static override timestamps = false;
 
-    static fields = {
+    static override fields = {
       id: { primaryKey: true, autoIncrement: true },
       departure: DataTypes.STRING,
       destination: DataTypes.STRING,
       flightDuration: DataTypes.FLOAT,
     };
 
-    static defaults = {
+    static override defaults = {
       flightDuration: 2.5,
     };
   }

@@ -3,10 +3,10 @@ import { getMySQLConnection } from "../../connection.ts";
 import { assertEquals } from "../../deps.ts";
 
 class Owner extends Model {
-  static table = "foreignkeyowners";
-  static timestamps = false;
+  static override table = "foreignkeyowners";
+  static override timestamps = false;
 
-  static fields = {
+  static override fields = {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -16,10 +16,10 @@ class Owner extends Model {
 }
 
 class Business extends Model {
-  static table = "foreignkeybusinesses";
-  static timestamps = false;
+  static override table = "foreignkeybusinesses";
+  static override timestamps = false;
 
-  static fields = {
+  static override fields = {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
