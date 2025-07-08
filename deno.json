@@ -8,6 +8,8 @@
     "@wok/case": "jsr:@wok/case@^1.0.1",
     "colorlog": "https://deno.land/x/colorlog@v1.0/mod.ts",
     "knex": "npm:knex@^3.1.0",
-    "mysql-driver": "https://deno.land/x/mysql@v2.12.1/mod.ts"
+    "mysql-driver": "https://deno.land/x/mysql@v2.12.1/mod.ts",
+    "dotenv": "https://deno.land/x/dotenv/mod.ts",
+    "deno-assert":"https://deno.land/std@0.115.1/testing/asserts.ts"
   }
 }
