@@ -1,4 +1,4 @@
-import { config } from "https://deno.land/x/dotenv/mod.ts";
+import { config } from "dotenv";
 import { Database } from "../mod.ts";
 
 const env = config();

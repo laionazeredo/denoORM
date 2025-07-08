@@ -1,6 +1,6 @@
 import { DataTypes, Model } from "../../../../mod.ts";
 import { getMySQLConnection } from "../../../connection.ts";
-import { assertEquals } from "../../../deps.ts";
+import { assertEquals } from "deno-assert";
 
 Deno.test("MySQL: Single model", async function () {
   const connection = getMySQLConnection();

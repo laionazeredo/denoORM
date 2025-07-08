@@ -1,6 +1,6 @@
 import { DataTypes, Model, Relationships } from "../../../mod.ts";
 import { getMySQLConnection } from "../../connection.ts";
-import { assertEquals } from "../../deps.ts";
+import { assertEquals } from "deno-assert";
 
 class Owner extends Model {
   static override table = "foreignkeyowners";

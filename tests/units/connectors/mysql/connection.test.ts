@@ -1,5 +1,5 @@
 import { getMySQLConnection } from "../../../connection.ts";
-import { assertEquals } from "../../../deps.ts";
+import { assertEquals } from "deno-assert";
 
 Deno.test("MySQL: Connection", async function () {
   const connection = getMySQLConnection();

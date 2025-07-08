@@ -1,6 +1,6 @@
 import { DataTypes, Model } from "../../../../mod.ts";
 import { getSQLiteConnection } from "../../../connection.ts";
-import { assertEquals } from "../../../deps.ts";
+import { assertEquals } from "deno-assert";
 
 class Article extends Model {
   static override table = "updatearticle";
