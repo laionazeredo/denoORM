@@ -11,5 +11,6 @@
   "sonarlint.connectedMode.project": {
     "connectionId": "laionazeredo",
     "projectKey": "laionazeredo_denoORM"
-  }
+  },
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false
 }
